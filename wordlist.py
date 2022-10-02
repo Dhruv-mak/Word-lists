@@ -9,7 +9,7 @@ import random
 # print("6: Magoosh advanced 2")
 # print("7: Manhattan 1")
 # print("8: Manhattan 2")
-a = 3 
+a = 5 
 switcher = {
     1: "https://raw.githubusercontent.com/Dhruv-mak/Word-lists/main/Wordbot-first.csv",
     2: "https://raw.githubusercontent.com/Dhruv-mak/Word-lists/main/Wordbot(last).csv",
