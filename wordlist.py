@@ -35,6 +35,7 @@ while answer[-1] != ":" or num != len(df):
     if a in (1, 2):
       print("Synonyms: ",df.loc[random_list[num]].at["Synonym"])
       print("Antonym: ",df.loc[random_list[num]].at["Antonym"])
+    num = (num + 1) % (len(df) - 1)
   else:
     print("you fucked up!")
     print("Correct: ", df.loc[random_list[num]].at["Word"])
@@ -45,6 +46,5 @@ while answer[-1] != ":" or num != len(df):
       print("Antonym: ",df.loc[random_list[num]].at["Antonym"])
     random_list.insert((num + 5) % (len(df) - 1), random_list[num])
     random_list.pop(num)
-  num = (num + 1) % (len(df) - 1)
   print()
   print()
